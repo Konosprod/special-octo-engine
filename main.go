@@ -44,7 +44,7 @@ func (p PacFile) Extract(file *os.File) {
 }
 
 func main() {
-	path := "./csv.pac"
+	path := os.Args[1]
 	f, err := os.Open(path)
 	files := make([]PacFile, 0)
 
